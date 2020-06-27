@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Loto", sans-serif;
+  color: #555;
+  color: #888; }
+
+.active--animate {
+  transition: all 1s;
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1); }
+
+.active {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.1); }
+
+.container {
+  width: 75vw;
+  margin: 0 auto; }
+
+.graph {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 4rem;
+  justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .graph {
+      grid-template-columns: 1fr; } }
+  .graph > * {
+    padding: 1vw 7vw; }
+  .graph__total {
+    background-color: #f5f5f5;
+    grid-column: 1/-1; }
+  .graph__quant {
+    border-right: 1px solid #ccc; }
+    @media only screen and (max-width: 37.5em) {
+      .graph__quant {
+        border-right: none; } }
+  .graph .score-box__1,
+  .graph .score-box__2 {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-row-gap: .5rem;
+    grid-column-gap: 3rem; }
+    .graph .score-box__1 h1,
+    .graph .score-box__2 h1 {
+      font-size: 2.5rem;
+      font-weight: 100;
+      grid-column: 1/-1; }
+    .graph .score-box__1 div span,
+    .graph .score-box__2 div span {
+      font-size: 1.8rem;
+      margin-right: 1rem; }
+  .graph .btn {
+    grid-column: 1/-1;
+    display: block;
+    margin: 0 auto;
+    background-color: #0fa2eb;
+    color: #FFF;
+    border: none;
+    padding: .8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    transition: all .2s; }
+    .graph .btn:focus {
+      outline: none; }
+    .graph .btn:hover {
+      padding: .9rem 2.2rem; }
+    .graph .btn:active {
+      transform: translateY(2px); }
+  .graph__outer, .graph__yellow, .graph__blue {
+    height: 1.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .graph__outer-arrow, .graph__yellow-arrow, .graph__blue-arrow {
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -10px;
+      right: -2px;
+      border-left: 2px solid transparent;
+      border-right: 2px solid transparent; }
+    .graph__outer-num, .graph__yellow-num, .graph__blue-num {
+      position: absolute;
+      top: -24px;
+      right: -8px; }
+    .graph__outer-text, .graph__yellow-text, .graph__blue-text {
+      position: absolute;
+      top: 2.5px;
+      right: 10px; }
+  .graph__outer {
+    width: 100%;
+    background-color: #e6e6e6;
+    margin: 3rem 0; }
+  .graph__yellow {
+    width: 90%;
+    background-color: #ffe28a;
+    position: relative; }
+    .graph__yellow-arrow {
+      border-top: 8px solid #ffe28a; }
+  .graph__blue {
+    width: 60%;
+    margin-top: -1.5rem;
+    background-color: #0fa2eb;
+    position: relative; }
+    .graph__blue-arrow {
+      border-top: 8px solid #0fa2eb; }
+  .graph__heading {
+    font-weight: 100;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 0rem;
+    color: #555; }
+    .graph__heading--text {
+      font-size: 1.5rem; }
+    .graph__heading--num {
+      font-size: 2.8rem; }
+  .graph__paragraph {
+    font-size: 1.2rem; }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+	<title>Score Overview</title>
+</head>
+<body>
+    
+    <div class="container">
+
+    	<form class="graph" onsubmit="return false"> 
+			<div class="score-box__1">
+				<h1>Quant</h1>
+				<div class="input">
+					<span>Current</span>
+					<input type="number" name="" min="1" max="60" required>
+				</div>
+				<div class="input">
+					<span>Target</span>
+					<input type="number" name="" min="1" max="60" required>
+				</div>
+			</div>
+
+			<div class="score-box__2">
+				<h1>Verbal</h1>
+				<div class="input">
+					<span>Current</span>
+					<input type="number" name="" min="1" max="60" required>
+				</div>
+				<div class="input">
+					<span>Target</span>
+					<input type="number" name="" min="1" max="60" required>
+				</div>
+			</div>
+		
+
+			<button class="btn">Submit and Refresh</button>	
+			
+		
+			<div class="graph__total active active--animate">
+				<div class="graph__total-content">
+					<h1 class="graph__heading ">Total Score</h1>
+					<h1 class="graph__heading graph__heading--num">620</h1>
+
+					<div class="graph__outer ">
+						<div class="graph__yellow graph__yellow--1">
+							<div class="graph__yellow-arrow"></div>
+							<div class="graph__yellow-num">720</div>
+							<p class="graph__yellow-text">+100</p>
+						</div>
+						<div class="graph__blue graph__blue--1">
+							<div class="graph__blue-arrow"></div>
+							<div class="graph__blue-num">620</div>
+						</div>
+					</div>
+
+					<p class="graph__paragraph">Your estimated GMAT score per your performance in this mock test is <span>620, which is 100 points lower than your target GMAT score of 720</span> </p>
+				</div>
+			</div>
+
+			<div class="graph__quant active active--animate">
+				<div class="graph__total-content">
+					<h1 class="graph__heading graph__heading--text">Quant Score</h1>
+					<h1 class="graph__heading graph__heading--num">Q42</h1>
+
+					<div class="graph__outer ">
+						<div class="graph__yellow graph__yellow--2">
+							<div class="graph__yellow-arrow"></div>
+							<div class="graph__yellow-num">Q48</div>
+							<p class="graph__yellow-text">+6</p>
+						</div>
+						<div class="graph__blue graph__blue--2">
+							<div class="graph__blue-arrow"></div>
+							<div class="graph__blue-num">Q42</div>
+						</div>
+					</div>
+
+					<p class="graph__paragraph">Your quantitative score per your performance in this mock test is <span>Q42, which is 6 points lower than your target quantitative score of Q48</span></p>
+				</div>			
+			</div>
+
+			<div class="graph__verbal active active--animate">
+				<div class="graph__total-content">
+					<h1 class="graph__heading graph__heading--text">Verbal Score</h1>
+					<h1 class="graph__heading graph__heading--num">V34</h1>
+
+					<div class="graph__outer ">
+						<div class="graph__yellow graph__yellow--3">
+							<div class="graph__yellow-arrow"></div>
+							<div class="graph__yellow-num">V41</div>
+							<p class="graph__yellow-text">+7</p>
+						</div>
+						<div class="graph__blue graph__blue--3">
+							<div class="graph__blue-arrow"></div>
+							<div class="graph__blue-num">V34</div>
+						</div>
+					</div>
+
+					<p class="graph__paragraph">Your estimated verbal score per your performance in this mock test is <span>V34, which is 6 points lower  than your target verbal score of 720</p>
+				</div>
+			</div>
+		</form>
+    </div>
+	
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
